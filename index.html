@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VA Claims Mastery Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f8ff;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #22543d, #38a169);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .nav {
+            background: #f0fff4;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 2px solid #9ae6b4;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-btn {
+            background: #48bb78;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0.25rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .nav-btn:hover {
+            background: #38a169;
+        }
+        .nav-btn.active {
+            background: #22543d;
+        }
+        .content {
+            padding: 2rem;
+            min-height: 500px;
+        }
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        .cover-page {
+            background: linear-gradient(135deg, #22543d, #38a169, #48bb78);
+            color: white;
+            text-align: center;
+            padding: 3rem;
+            margin: -2rem;
+        }
+        .cover-title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .start-btn {
+            background: #68d391;
+            color: #22543d;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 2rem;
+        }
+        .start-btn:hover {
+            background: #9ae6b4;
+        }
+        h2 {
+            color: #22543d;
+            border-bottom: 2px solid #9ae6b4;
+            padding-bottom: 0.5rem;
+        }
+        .highlight {
+            background: #f0fff4;
+            border-left: 4px solid #48bb78;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .warning {
+            background: #fffaf0;
+            border-left: 4px solid #ed8936;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .form-section {
+            background: #f7fafc;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #2f855a;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 2px solid #9ae6b4;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            height: 80px;
+        }
+        .print-btn {
+            background: #48bb78;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 1rem 0;
+        }
+        .print-btn:hover {
+            background: #38a169;
+        }
+        .checklist {
+            background: white;
+            border: 1px solid #c6f6d5;
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        .checklist-item {
+            padding: 0.5rem;
+            border-bottom: 1px solid #e6fffa;
+        }
+        .checklist-item:last-child {
+            border-bottom: none;
+        }
+        .rating-chart {
+            background: white;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .rating-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .rating-row:last-child {
+            border-bottom: none;
+        }
+        .rating-percent {
+            font-weight: bold;
+            color: #2f855a;
+        }
+        .rating-amount {
+            color: #38a169;
+            font-weight: bold;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+        .progress-fill {
+            height: 100%;
+            background: #48bb78;
+            border-radius: 4px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+            .content {
+                padding: 1rem;
+            }
+            .nav-btn {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.8rem;
+                margin: 0.1rem;
+            }
+            .cover-title {
+                font-size: 2rem;
+            }
+            .start-btn {
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header" id="main-header">
+            <h1>VA Claims Process</h1>
+            <p>Complete Guide for First-Time Claimants & Rating Increases</p>
+        </div>
+
+        <div class="nav">
+            <button class="nav-btn active" onclick="showPage(0)">Cover</button>
+            <button class="nav-btn" onclick="showPage(1)">1. Overview</button>
+            <button class="nav-btn" onclick="showPage(2)">2. VA Process</button>
+            <button class="nav-btn" onclick="showPage(3)">3. Getting Started</button>
+            <button class="nav-btn" onclick="showPage(4)">4. Medical Evidence</button>
+            <button class="nav-btn" onclick="showPage(5)">5. Nexus Letters</button>
+            <button class="nav-btn" onclick="showPage(6)">6. Buddy Statements</button>
+            <button class="nav-btn" onclick="showPage(7)">7. Rating Chart</button>
+            <button class="nav-btn" onclick="showPage(8)">8. Personal Statement</button>
+            <button class="nav-btn" onclick="showPage(9)">9. Key Points</button>
+            <button class="nav-btn" onclick="showPage(10)">10. Crucial Points</button>
+            <button class="nav-btn" onclick="showPage(11)">11. Disclaimer</button>
+            <button class="nav-btn" onclick="showPage(12)">12. Buddy Letter</button>
+            <button class="nav-btn" onclick="showPage(13)">13. Personal Example</button>
+        </div>
+
+        <div class="content">
+            <!-- Cover Page -->
+            <div class="page active" id="page-0">
+                <div class="cover-page">
+                    <div style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 10px; margin-bottom: 2rem;">
+                        <p style="font-size: 1.2rem; margin-bottom: 1rem;">This toolkit is your way to beat the system <strong>without paying $3,000+</strong> to reps or lawyers.</p>
+                        <p>Tweak templates, add your own story. This guide works — because it was built by someone who's been there.</p>
+                    </div>
+                    <div class="cover-title">VA CLAIMS MASTERY</div>
+                    <p style="font-size: 1.5rem; margin-bottom: 2rem;">The Complete Guide to Winning Your VA Disability Claim</p>
+                    <div style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0; flex-wrap: wrap;">
+                        <div><div style="font-size: 2rem; font-weight: bold;">13</div><div>Chapters</div></div>
+                        <div><div style="font-size: 2rem; font-weight: bold;">15+</div><div>Forms</div></div>
+                        <div><div style="font-size: 2rem; font-weight: bold;">100%</div><div>Actionable</div></div>
+                    </div>
+                    <button class="start-btn" onclick="showPage(1)">START HERE</button>
+                </div>
+            </div>
+
+            <!-- Page 1: Overview -->
+            <div class="page" id="page-1">
+                <h2>Welcome to Your VA Claims Journey</h2>
+                <p>This comprehensive guide will walk you through the entire VA claims process, whether you're filing for the first time or seeking to increase your current rating.</p>
+                
+                <div class="highlight">
+                    <h3>What You'll Learn:</h3>
+                    <ul>
+                        <li>How to gather and organize medical evidence</li>
+                        <li>Understanding nexus letters and their importance</li>
+                        <li>Creating effective buddy statements</li>
+                        <li>Navigating the VA rating system</li>
+                        <li>Step-by-step filing process</li>
+                        <li>Strategic tips from experienced veterans</li>
+                    </ul>
+                </div>
+
+                <div class="warning">
+                    <h3>Important Note:</h3>
+                    <p>This guide is for informational purposes only and does not constitute legal advice. Always consult with a qualified VA representative or attorney for personalized guidance.</p>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 7.7%"></div>
+                </div>
+            </div>
+
+            <!-- Page 2: VA Process -->
+            <div class="page" id="page-2">
+                <h2>🔹 THE VA CLAIM PROCESS (SIMPLIFIED)</h2>
+                <p>Follow these 5 essential steps to maximize your chances of approval.</p>
+
+                <div class="highlight">
+                    <h3>📝 Step 1: File Your Claim</h3>
+                    <ul>
+                        <li><strong>Go to va.gov</strong> - Use the online portal for fastest processing</li>
+                        <li><strong>File a new claim or increase online</strong></li>
+                        <li><strong>Attach:</strong> Service records, DD-214, medical records</li>
+                    </ul>
+                </div>
+
+                <div class="warning">
+                    <h3>📋 Step 2: Submit Your Statement in Support of Claim</h3>
+                    <p><strong>This is CRUCIAL</strong> - Explain why your condition is connected to military service.</p>
+                </div>
+
+                <div class="highlight">
+                    <h3>👥 Step 3: Attach Buddy Letters</h3>
+                    <p>Get statements from spouses, coworkers, fellow soldiers, NCOs.</p>
+                </div>
+
+                <div class="warning">
+                    <h3>🩺 Step 4: Submit or Request a Nexus Letter</h3>
+                    <p>Must use "at least as likely as not" language.</p>
+                </div>
+
+                <div class="highlight">
+                    <h3>🏥 Step 5: Prepare for C&P Exam</h3>
+                    <p><strong>Describe your worst days - not your best days.</strong></p>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 15.4%"></div>
+                </div>
+            </div>
+
+            <!-- Page 3: Getting Started -->
+            <div class="page" id="page-3">
+                <h2>Getting Started: Foundation of Your Claim</h2>
+                
+                <div class="warning">
+                    <h3>Pre-Filing Medical Treatment - Critical First Step</h3>
+                    <p><strong>This Cannot Be Overstated:</strong> Getting medical treatment BEFORE filing your claim is absolutely essential.</p>
+                </div>
+
+                <div class="checklist">
+                    <h3>Pre-Filing Checklist:</h3>
+                    <div class="checklist-item">
+                        <input type="checkbox"> Schedule medical appointments for all conditions
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox"> Obtain military medical records
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox"> Gather civilian medical records
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox"> Document symptoms and daily impacts
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox"> Contact buddy statement witnesses
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 23.1%"></div>
+                </div>
+            </div>
+
+            <!-- Page 4: Medical Evidence -->
+            <div class="page" id="page-4">
+                <h2>Medical Evidence: Building Your Case</h2>
+                
+                <h3>Types of Medical Evidence</h3>
+                <ul>
+                    <li><strong>Service Medical Records:</strong> All treatment during active duty</li>
+                    <li><strong>VA Medical Records:</strong> All VA hospital visits</li>
+                    <li><strong>Private Medical Records:</strong> Civilian doctor visits</li>
+                    <li><strong>Diagnostic Tests:</strong> X-rays, MRIs, blood tests</li>
+                </ul>
+
+                <div class="highlight">
+                    <h3>Key Requirements:</h3>
+                    <ul>
+                        <li><strong>Current Diagnosis:</strong> Medical professional must diagnose your condition</li>
+                        <li><strong>In-Service Event:</strong> Evidence something happened during service</li>
+                        <li><strong>Nexus:</strong> Medical opinion connecting condition to service</li>
+                    </ul>
+                </div>
+
+                <div class="form-section">
+                    <h4>Record Request Tracker</h4>
+                    <div class="form-group">
+                        <label>Military Records Request Date:</label>
+                        <input type="date" id="military-date">
+                    </div>
+                    <div class="form-group">
+                        <label>VA Records Request Date:</label>
+                        <input type="date" id="va-date">
+                    </div>
+                    <div class="form-group">
+                        <label>Private Records Request Date:</label>
+                        <input type="date" id="private-date">
+                    </div>
+                    <div class="form-group">
+                        <label>Notes:</label>
+                        <textarea id="records-notes" placeholder="Track your progress and any issues..."></textarea>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 30.8%"></div>
+                </div>
+            </div>
+
+            <!-- Page 5: Nexus Letters -->
+            <div class="page" id="page-5">
+                <h2>Nexus Letters: The Critical Connection</h2>
+                
+                <p>A nexus letter connects your current medical condition to your military service. Often the most important piece of evidence.</p>
+
+                <div class="highlight">
+                    <h3>Key Elements of a Strong Nexus Letter:</h3>
+                    <ul>
+                        <li>Written by a qualified medical professional</li>
+                        <li>Reviews your military and medical history</li>
+                        <li>Provides medical opinion on causation</li>
+                        <li>Uses language like "more likely than not" or "at least as likely as not"</li>
+                        <li>Explains the medical reasoning</li>
+                    </ul>
+                </div>
+
+                <div class="form-section">
+                    <h3>Fillable Nexus Letter Template</h3>
+                    <button class="print-btn" onclick="printTemplate('nexus')">Print This Template</button>
+                    
+                    <div class="form-group">
+                        <label>Doctor's Name:</label>
+                        <input type="text" placeholder="Dr. John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label>Medical Credentials:</label>
+                        <input type="text" placeholder="MD, Internal Medicine">
+                    </div>
+                    <div class="form-group">
+                        <label>Date:</label>
+                        <input type="date">
+                    </div>
+                    <div class="form-group">
+                        <label>Veteran's Name:</label>
+                        <input type="text" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>Service Dates:</label>
+                        <input type="text" placeholder="January 2000 - January 2004">
+                    </div>
+                    <div class="form-group">
+                        <label>Current Diagnosis:</label>
+                        <input type="text" placeholder="PTSD, Lower Back Pain">
+                    </div>
+                    <div class="form-group">
+                        <label>In-Service Event/Stressor:</label>
+                        <textarea placeholder="Describe the event or stressor that occurred during military service..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Medical Opinion:</label>
+                        <textarea placeholder="In my medical opinion, it is at least as likely as not that..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Medical Reasoning:</label>
+                        <textarea placeholder="This opinion is based on..."></textarea>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 38.5%"></div>
+                </div>
+            </div>
+
+            <!-- Page 6: Buddy Statements -->
+            <div class="page" id="page-6">
+                <h2>Buddy Statements: Personal Testimony</h2>
+                
+                <p>Written testimony from people who witnessed your condition or its effects.</p>
+
+                <div class="highlight">
+                    <h3>Effective Buddy Statement Tips:</h3>
+                    <ul>
+                        <li>Include specific examples and dates</li>
+                        <li>Describe observable symptoms and behaviors</li>
+                        <li>Explain how symptoms have changed over time</li>
+                        <li>Be honest and factual</li>
+                        <li>Include witness contact information</li>
+                    </ul>
+                </div>
+
+                <div class="form-section">
+                    <h3>Fillable Buddy Statement Template</h3>
+                    <button class="print-btn" onclick="printTemplate('buddy')">Print This Template</button>
+                    
+                    <div class="form-group">
+                        <label>Witness Name:</label>
+                        <input type="text" placeholder="Jane Smith">
+                    </div>
+                    <div class="form-group">
+                        <label>Relationship to Veteran:</label>
+                        <input type="text" placeholder="Spouse, Fellow Service Member">
+                    </div>
+                    <div class="form-group">
+                        <label>Contact Information:</label>
+                        <input type="text" placeholder="Phone and Email">
+                    </div>
+                    <div class="form-group">
+                        <label>How long have you known the veteran?</label>
+                        <input type="text" placeholder="10 years">
+                    </div>
+                    <div class="form-group">
+                        <label>Veteran's Name:</label>
+                        <input type="text" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>Condition(s) Witnessed:</label>
+                        <input type="text" placeholder="PTSD, Depression, Back Pain">
+                    </div>
+                    <div class="form-group">
+                        <label>Witnessed Symptoms:</label>
+                        <textarea placeholder="Describe specific incidents and symptoms you observed..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Impact on Daily Life:</label>
+                        <textarea placeholder="How have these symptoms affected the veteran's daily activities?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Changes Over Time:</label>
+                        <textarea placeholder="Have you noticed symptoms getting worse or better?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Date:</label>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 46.2%"></div>
+                </div>
+            </div>
+
+            <!-- Page 7: Rating Chart -->
+            <div class="page" id="page-7">
+                <h2>VA Disability Rating Chart</h2>
+                
+                <p>The VA uses "VA Math" - they don't simply add percentages.</p>
+
+                <div class="highlight">
+                    <h3>How VA Math Works:</h3>
+                    <ul>
+                        <li>Start with your highest single rating</li>
+                        <li>Calculate remaining efficiency (100% - current rating)</li>
+                        <li>Apply next rating to remaining efficiency</li>
+                        <li>Round to nearest 10% at the end</li>
+                    </ul>
+                </div>
+
+                <div class="rating-chart">
+                    <h3>2024 VA Disability Compensation Rates (Monthly)</h3>
+                    <div class="rating-row">
+                        <span class="rating-percent">10%</span>
+                        <span class="rating-amount">$171.23</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">20%</span>
+                        <span class="rating-amount">$338.49</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">30%</span>
+                        <span class="rating-amount">$524.31</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">40%</span>
+                        <span class="rating-amount">$755.28</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">50%</span>
+                        <span class="rating-amount">$1,075.16</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">60%</span>
+                        <span class="rating-amount">$1,361.88</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">70%</span>
+                        <span class="rating-amount">$1,716.28</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">80%</span>
+                        <span class="rating-amount">$1,995.01</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">90%</span>
+                        <span class="rating-amount">$2,241.91</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">100%</span>
+                        <span class="rating-amount">$3,737.85</span>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>VA Math Calculator</h3>
+                    <div class="form-group">
+                        <label>First Rating (%):</label>
+                        <input type="number" id="rating1" placeholder="50" min="0" max="100">
+                    </div>
+                    <div class="form-group">
+                        <label>Second Rating (%):</label>
+                        <input type="number" id="rating2" placeholder="30" min="0" max="100">
+                    </div>
+                    <div class="form-group">
+                        <label>Third Rating (%):</label>
+                        <input type="number" id="rating3" placeholder="10" min="0" max="100">
+                    </div>
+                    <button class="print-btn" onclick="calculateVAMath()">Calculate Combined Rating</button>
+                    <div id="va-math-result" style="margin-top: 1rem; font-size: 1.2rem; font-weight: bold;"></div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 53.9%"></div>
+                </div>
+            </div>
+
+            <!-- Page 8: Personal Statement -->
+            <div class="page" id="page-8">
+                <h2>Personal Statement: Your Story Matters</h2>
+                
+                <p>Tell the VA in your own words how your conditions affect your daily life.</p>
+
+                <div class="highlight">
+                    <h3>Effective Personal Statement Tips:</h3>
+                    <ul>
+                        <li>Be specific about symptoms and their frequency</li>
+                        <li>Describe how conditions affect work, relationships, and daily activities</li>
+                        <li>Include specific examples and incidents</li>
+                        <li>Mention any functional limitations</li>
+                        <li>Be honest about good days and bad days</li>
+                        <li>Use clear, straightforward language</li>
+                    </ul>
+                </div>
+
+                <div class="form-section">
+                    <h3>Fillable Personal Statement Template</h3>
+                    <button class="print-btn" onclick="printTemplate('personal')">Print This Template</button>
+                    
+                    <div class="form-group">
+                        <label>Your Full Name:</label>
+                        <input type="text" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>VA File Number (if known):</label>
+                        <input type="text" placeholder="123456789">
+                    </div>
+                    <div class="form-group">
+                        <label>Date of Statement:</label>
+                        <input type="date">
+                    </div>
+                    <div class="form-group">
+                        <label>Conditions Being Claimed:</label>
+                        <textarea placeholder="PTSD, Lower Back Pain, Tinnitus..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Service Connection:</label>
+                        <textarea placeholder="How did these conditions start during service?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Current Symptoms:</label>
+                        <textarea placeholder="Describe symptoms in detail..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Impact on Daily Life:</label>
+                        <textarea placeholder="How do conditions affect daily activities?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Impact on Work:</label>
+                        <textarea placeholder="How do conditions affect your ability to work?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Impact on Relationships:</label>
+                        <textarea placeholder="How do conditions affect relationships and social life?"></textarea>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 61.6%"></div>
+                </div>
+            </div>
+
+            <!-- Page 9: Key Points -->
+            <div class="page" id="page-9">
+                <h2>6 Critical Points Every Veteran Must Know</h2>
+                
+                <div class="highlight">
+                    <h3>🔑 Key Point #1: VA Raters Are NOT Doctors</h3>
+                    <p>VA raters are data reviewers. You must paint a complete picture through evidence.</p>
+                </div>
+
+                <div class="warning">
+                    <h3>📝 Key Point #2: Write Your Own Story - Focus on WORST Days</h3>
+                    <p>Always describe your worst days, flare-ups, and most severe symptoms.</p>
+                </div>
+
+                <div class="highlight">
+                    <h3>✍️ Key Point #3: Keep It Simple Yet Specific</h3>
+                    <p>Use clear language while being extremely specific about limitations.</p>
+                </div>
+
+                <div class="warning">
+                    <h3>📋 Key Point #4: Recent Medical Records Are GOLD</h3>
+                    <p>Get recent treatment BEFORE filing. Records from last 6-12 months are crucial.</p>
+                </div>
+
+                <div class="highlight">
+                    <h3>💰 Key Point #5: The Funding Is Already There</h3>
+                    <p>Congress allocated the funds. You just need to prove your disability qualifies.</p>
+                </div>
+
+                <div class="warning">
+                    <h3>⚖️ Key Point #6: Reference Title 38 USC Laws</h3>
+                    <p>Cite specific USC laws in your statements to strengthen legal position.</p>
+                    <ul>
+                        <li><strong>38 USC § 1110:</strong> Basic entitlement to compensation</li>
+                        <li><strong>38 USC § 1131:</strong> Service-connection for disabilities</li>
+                        <li><strong>38 USC § 1154(a):</strong> Benefit of the doubt standard</li>
+                        <li><strong>38 USC § 5107(b):</strong> Reasonable doubt resolved in favor of veteran</li>
+                    </ul>
+                </div>
+
+                    <div class="form-group">
+                        <label>VA Records Request Date:</label>
+                        <input type="date" id="va-date">
+                    </div>
+                    <div class="form-group">
+                        <label>Private Records Request Date:</label>
+                        <input type="date" id="private-date">
+                    </div>
+                    <div class="form-group">
+                        <label>Notes:</label>
+                        <textarea id="records-notes" placeholder="Track your progress and any issues..."></textarea>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 30.8%"></div>
+                </div>
+            </div>
+
+            <!-- Page 5: Nexus Letters -->
+            <div class="page" id="page-5">
+                <h2>Nexus Letters: The Critical Connection</h2>
+                
+                <p>A nexus letter connects your current medical condition to your military service. Often the most important piece of evidence.</p>
+
+                <div class="highlight">
+                    <h3>Key Elements of a Strong Nexus Letter:</h3>
+                    <ul>
+                        <li>Written by a qualified medical professional</li>
+                        <li>Reviews your military and medical history</li>
+                        <li>Provides medical opinion on causation</li>
+                        <li>Uses language like "more likely than not" or "at least as likely as not"</li>
+                        <li>Explains the medical reasoning</li>
+                    </ul>
+                </div>
+
+                <div class="form-section">
+                    <h3>Fillable Nexus Letter Template</h3>
+                    <button class="print-btn" onclick="printTemplate('nexus')">Print This Template</button>
+                    
+                    <div class="form-group">
+                        <label>Doctor's Name:</label>
+                        <input type="text" placeholder="Dr. John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label>Medical Credentials:</label>
+                        <input type="text" placeholder="MD, Internal Medicine">
+                    </div>
+                    <div class="form-group">
+                        <label>Date:</label>
+                        <input type="date">
+                    </div>
+                    <div class="form-group">
+                        <label>Veteran's Name:</label>
+                        <input type="text" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>Service Dates:</label>
+                        <input type="text" placeholder="January 2000 - January 2004">
+                    </div>
+                    <div class="form-group">
+                        <label>Current Diagnosis:</label>
+                        <input type="text" placeholder="PTSD, Lower Back Pain">
+                    </div>
+                    <div class="form-group">
+                        <label>In-Service Event/Stressor:</label>
+                        <textarea placeholder="Describe the event or stressor that occurred during military service..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Medical Opinion:</label>
+                        <textarea placeholder="In my medical opinion, it is at least as likely as not that..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Medical Reasoning:</label>
+                        <textarea placeholder="This opinion is based on..."></textarea>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 38.5%"></div>
+                </div>
+            </div>
+
+            <!-- Page 6: Buddy Statements -->
+            <div class="page" id="page-6">
+                <h2>Buddy Statements: Personal Testimony</h2>
+                
+                <p>Written testimony from people who witnessed your condition or its effects.</p>
+
+                <div class="highlight">
+                    <h3>Effective Buddy Statement Tips:</h3>
+                    <ul>
+                        <li>Include specific examples and dates</li>
+                        <li>Describe observable symptoms and behaviors</li>
+                        <li>Explain how symptoms have changed over time</li>
+                        <li>Be honest and factual</li>
+                        <li>Include witness contact information</li>
+                    </ul>
+                </div>
+
+                <div class="form-section">
+                    <h3>Fillable Buddy Statement Template</h3>
+                    <button class="print-btn" onclick="printTemplate('buddy')">Print This Template</button>
+                    
+                    <div class="form-group">
+                        <label>Witness Name:</label>
+                        <input type="text" placeholder="Jane Smith">
+                    </div>
+                    <div class="form-group">
+                        <label>Relationship to Veteran:</label>
+                        <input type="text" placeholder="Spouse, Fellow Service Member">
+                    </div>
+                    <div class="form-group">
+                        <label>Contact Information:</label>
+                        <input type="text" placeholder="Phone and Email">
+                    </div>
+                    <div class="form-group">
+                        <label>How long have you known the veteran?</label>
+                        <input type="text" placeholder="10 years">
+                    </div>
+                    <div class="form-group">
+                        <label>Veteran's Name:</label>
+                        <input type="text" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>Condition(s) Witnessed:</label>
+                        <input type="text" placeholder="PTSD, Depression, Back Pain">
+                    </div>
+                    <div class="form-group">
+                        <label>Witnessed Symptoms:</label>
+                        <textarea placeholder="Describe specific incidents and symptoms you observed..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Impact on Daily Life:</label>
+                        <textarea placeholder="How have these symptoms affected the veteran's daily activities?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Changes Over Time:</label>
+                        <textarea placeholder="Have you noticed symptoms getting worse or better?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Date:</label>
+                        <input type="date">
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 46.2%"></div>
+                </div>
+            </div>
+
+            <!-- Page 7: Rating Chart -->
+            <div class="page" id="page-7">
+                <h2>VA Disability Rating Chart</h2>
+                
+                <p>The VA uses "VA Math" - they don't simply add percentages.</p>
+
+                <div class="highlight">
+                    <h3>How VA Math Works:</h3>
+                    <ul>
+                        <li>Start with your highest single rating</li>
+                        <li>Calculate remaining efficiency (100% - current rating)</li>
+                        <li>Apply next rating to remaining efficiency</li>
+                        <li>Round to nearest 10% at the end</li>
+                    </ul>
+                </div>
+
+                <div class="rating-chart">
+                    <h3>2024 VA Disability Compensation Rates (Monthly)</h3>
+                    <div class="rating-row">
+                        <span class="rating-percent">10%</span>
+                        <span class="rating-amount">$171.23</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">20%</span>
+                        <span class="rating-amount">$338.49</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">30%</span>
+                        <span class="rating-amount">$524.31</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">40%</span>
+                        <span class="rating-amount">$755.28</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">50%</span>
+                        <span class="rating-amount">$1,075.16</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">60%</span>
+                        <span class="rating-amount">$1,361.88</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">70%</span>
+                        <span class="rating-amount">$1,716.28</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">80%</span>
+                        <span class="rating-amount">$1,995.01</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">90%</span>
+                        <span class="rating-amount">$2,241.91</span>
+                    </div>
+                    <div class="rating-row">
+                        <span class="rating-percent">100%</span>
+                        <span class="rating-amount">$3,737.85</span>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>VA Math Calculator</h3>
+                    <div class="form-group">
+                        <label>First Rating (%):</label>
+                        <input type="number" id="rating1" placeholder="50" min="0" max="100">
+                    </div>
+                    <div class="form-group">
+                        <label>Second Rating (%):</label>
+                        <input type="number" id="rating2" placeholder="30" min="0" max="100">
+                    </div>
+                    <div class="form-group">
+                        <label>Third Rating (%):</label>
+                        <input type="number" id="rating3" placeholder="10" min="0" max="100">
+                    </div>
+                    <button class="print-btn" onclick="calculateVAMath()">Calculate Combined Rating</button>
+                    <div id="va-math-result" style="margin-top: 1rem; font-size: 1.2rem; font-weight: bold;"></div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 53.9%"></div>
+                </div>
+            </div>
+
+            <!-- Page 8: Personal Statement -->
+            <div class="page" id="page-8">
+                <h2>Personal Statement: Your Story Matters</h2>
+                
+                <p>Tell the VA in your own words how your conditions affect your daily life.</p>
+
+                <div class="highlight">
+                    <h3>Effective Personal Statement Tips:</h3>
+                    <ul>
+                        <li>Be specific about symptoms and their frequency</li>
+                        <li>Describe how conditions affect work, relationships, and daily activities</li>
+                        <li>Include specific examples and incidents</li>
+                        <li>Mention any functional limitations</li>
+                        <li>Be honest about good days and bad days</li>
+                        <li>Use clear, straightforward language</li>
+                    </ul>
+                </div>
+
+                <div class="form-section">
+                    <h3>Fillable Personal Statement Template</h3>
+                    <button class="print-btn" onclick="printTemplate('personal')">Print This Template</button>
+                    
+                    <div class="form-group">
+                        <label>Your Full Name:</label>
+                        <input type="text" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>VA File Number (if known):</label>
+                        <input type="text" placeholder="123456789">
+                    </div>
+                    <div class="form-group">
+                        <label>Date of Statement:</label>
+                        <input type="date">
+                    </div>
+                    <div class="form-group">
+                        <label>Conditions Being Claimed:</label>
+                        <textarea placeholder="PTSD, Lower Back Pain, Tinnitus..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Service Connection:</label>
+                        <textarea placeholder="How did these conditions start during service?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Current Symptoms:</label>
+                        <textarea placeholder="Describe symptoms in detail..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Impact on Daily Life:</label>
+                        <textarea placeholder="How do conditions affect daily activities?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Impact on Work:</label>
+                        <textarea placeholder="How do conditions affect your ability to work?"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Impact on Relationships:</label>
+                        <textarea placeholder="How do conditions affect relationships and social life?"></textarea>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 61.6%"></div>
+                </div>
+            </div>
+
+            <!-- Page 9: Key Points -->
+            <div class="page" id="page-9">
+                <h2>6 Critical Points Every Veteran Must Know</h2>
+                
+                <div class="highlight">
+                    <h3>🔑 Key Point #1: VA Raters Are NOT Doctors</h3>
+                    <p>VA raters are data reviewers. You must paint a complete picture through evidence.</p>
+                </div>
+
+                <div class="warning">
+                    <h3>📝 Key Point #2: Write Your Own Story - Focus on WORST Days</h3>
+                    <p>Always describe your worst days, flare-ups, and most severe symptoms.</p>
+                </div>
+
+                <div class="highlight">
+                    <h3>✍️ Key Point #3: Keep It Simple Yet Specific</h3>
+                    <p>Use clear language while being extremely specific about limitations.</p>
+                </div>
+
+                <div class="warning">
+                    <h3>📋 Key Point #4: Recent Medical Records Are GOLD</h3>
+                    <p>Get recent treatment BEFORE filing. Records from last 6-12 months are crucial.</p>
+                </div>
+
+                <div class="highlight">
+                    <h3>💰 Key Point #5: The Funding Is Already There</h3>
+                    <p>Congress allocated the funds. You just need to prove your disability qualifies.</p>
+                </div>
+
+                <div class="warning">
+                    <h3>⚖️ Key Point #6: Reference Title 38 USC Laws</h3>
+                    <p>Cite specific USC laws in your statements to strengthen legal position.</p>
+                    <ul>
+                        <li><strong>38 USC § 1110:</strong> Basic entitlement to compensation</li>
+                        <li><strong>38 USC § 1131:</strong> Service-connection for disabilities</li>
+                        <li><strong>38 USC § 1154(a):</strong> Benefit of the doubt standard</li>
+                        <li><strong>38 USC § 5107(b):</strong> Reasonable doubt resolved in favor of veteran</li>
+                    </ul>
+                </div>
+
+                
